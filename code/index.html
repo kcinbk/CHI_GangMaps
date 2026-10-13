@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking NYC Snow Removal discrepancy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        background-color: #F2DFCE;
+        font-family: "Times New Roman", serif;
+        }
+
+        main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        }
+
+        p.main {
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        }
+
+        p.byline {
+        font-family: serif;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+        }
+
+        p.secondary {
+        font-size: 35px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 25px;
+        width: 85%;
+        }
+
+        p.smaller {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+        font-style: italic;
+        width: 85%;
+        margin-top: 10px;
+        line-height: 1.5;
+        }
+
+        #mapContainer {
+        display: flex;
+        width: 85%;
+        justify-content: center;
+        margin-bottom: 10px;
+        }
+
+        iframe {
+        width: 100%;
+        height: 80vh;
+        border: none;
+        }
+
+        p.citation {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 25px;
+        width: 85%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <main>
+            <p class="main">Time-series map of Chicago gangs</p>
+
+            <p class="byline">
+            By <a href="https://kcinbk.github.io/">Keenan Chen</a>
+            </p>
+
+            <div id="mapContainer">
+            <iframe
+                id="gangMap"
+                src="visualizations/top_gangs_territority.html"
+                title="Chicago gang map>
+            </iframe>
+            </div>
+
+        </main>
+    </body>
+</html>
